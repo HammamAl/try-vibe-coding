@@ -1,9 +1,9 @@
 import { Elysia } from "elysia";
-import { userRoutes } from "./routes/userRoutes";
+import { userRoute } from "./routes/user-route";
 
 const app = new Elysia()
   .get("/health", () => ({ status: "ok", timestamp: new Date().toISOString() }))
-  .use(userRoutes)
+  .group("/api", (app) => app.use(userRoute))
   .listen(process.env.PORT || 3000);
 
 console.log(
