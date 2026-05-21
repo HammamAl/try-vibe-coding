@@ -6,7 +6,7 @@
   "scripts": {
     "db:generate": "drizzle-kit generate",
     "db:push": "drizzle-kit push",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "/Users/hammam/.bun/bin/bun run --watch src/index.ts"
   },
   "devDependencies": {
     "@types/bun": "^1.3.14",
